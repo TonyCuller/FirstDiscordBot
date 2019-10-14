@@ -28,7 +28,7 @@ client.on('message', message => {
     const command = args.shift().toLowerCase();
     if(!client.commands.has(command)) return;
     try {
-        client.commands.get(command).execute(message, args[0]);
+        client.commands.get(command).execute(message, args[0]);              
     }
     catch(error){
         console.error(error);        
