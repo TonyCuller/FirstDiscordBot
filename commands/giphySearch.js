@@ -22,7 +22,6 @@ module.exports = {
             )
         }).catch((error) => {
             console.error(error);
-            console.log("Error From Giphy Search")
         })
     }
 }
