@@ -20,10 +20,8 @@ client.on('message', message => {
         console.log(searchTerm);
         giphy.search('gifs', {"q": `${searchTerm}`})
         .then((response) => {
-            var total = response.data.length;
-            console.log(total);
-            var index = Math.floor((Math.random() * total));
-            console.log(index);
+            var total = response.data.length;            
+            var index = Math.floor((Math.random() * total));           
             var final = response.data[index];
             
             //send Gif
